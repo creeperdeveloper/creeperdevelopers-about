@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlimsyDeer05833</title>
+    <style>
+        /* ライトモードのスタイル */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: #333;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+
+        .profile-info {
+            margin-bottom: 30px;
+        }
+
+        .profile-info p {
+            margin-bottom: 10px;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        .skills {
+            margin-bottom: 30px;
+        }
+
+        .skills ul {
+            padding: 0;
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .skills li {
+            background-color: #e7f1ff;
+            color: #3498db;
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-size: 0.95em;
+        }
+
+        .developing {
+            margin-bottom: 30px;
+        }
+
+        .developing a {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .developing a:hover {
+            color: #219653;
+            text-decoration: underline;
+        }
+
+        .country {
+            margin-bottom: 30px;
+        }
+
+        .dark-mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 8px;
+            cursor: pointer;
+            z-index: 1000;
+            transition: background-color 0.3s ease;
+        }
+
+        .dark-mode-toggle:hover {
+            background-color: #555;
+        }
+
+        /* ダークモードのスタイル */
+        .dark-mode body {
+            background-color: #1e1e1e;
+            color: #f5f5f5;
+        }
+
+        .dark-mode .container {
+            background-color: #2c2c2c;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .dark-mode h1,
+        .dark-mode h2 {
+            color: #eee;
+            border-bottom-color: #555;
+        }
+
+        .dark-mode .social-links a {
+            color: #89cff0;
+        }
+
+        .dark-mode .social-links a:hover {
+            color: #64b5f6;
+        }
+
+        .dark-mode .skills li {
+            background-color: #444;
+            color: #89cff0;
+        }
+
+        .dark-mode .developing a {
+            color: #98fb98;
+        }
+
+        .dark-mode .developing a:hover {
+            color: #7fffd4;
+        }
+
+        .dark-mode .dark-mode-toggle {
+            background-color: #eee;
+            color: #333;
+        }
+
+        .dark-mode .dark-mode-toggle:hover {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="dark-mode-toggle">ダークモード</button>
+    <div class="container">
+        <h1>FlimsyDeer05833の自己紹介</h1>
+        <p style="margin-top: 20px;">マイクラしかしない人です<br><a href="#developing">NovaDefender AntiCheat</a>というアドオンを開発しています</p>
+        <div class="profile-info">
+            <h2>基本情報</h2>
+            <p>Minecraft ID: <span style="font-weight: bold;">FlimsyDeer05833</span></p>
+            <div class="social-links">
+                <p>
+                    GitHub: <a href="https://github.com/creeperdeveloper" target="_blank">creeperdeveloper</a>
+                </p>
+                <p>
+                    Xbox: <span style="font-weight: bold;">FlimsyDeer05833</span>
+                </p>
+                <p>
+                    Xbox: <span style="font-weight: bold;">FlimsyDeer05833</span>
+                </p>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2>得意分野</h2>
+            <ul>
+                <li>プログラミング</li>
+                <li>Minecraft</li>
+            </ul>
+        </div>
+
+        <div class="skills">
+            <h2>苦手分野</h2>
+            <ul>
+                <li>建築</li>
+            </ul>
+        </div>
+
+        <div class="developing" id="program">
+            <h2>作ったプログラム</h2>
+            <p>none</p>
+<!--             <p>・Minecraft Protector Addon: <a href="https://minecraft-mcworld.com/116499/"
+                    target="_blank">https://minecraft-mcworld.com/116499/</a></p> -->
+        </div>
+
+        <div class="developing" id="developing">
+            <h2>開発中のプログラム</h2>
+            <p>・NovaDefender AntiCheat: <a href="http://novadefender.anticheat.f5.si"
+                    target="_blank">http://novadefender.anticheat.f5.si</a></p>
+        </div>
+
+        <!-- <div class="country">
+            <h2>Minecraft内の国</h2>
+            <p>・チキン国</p>
+        </div> -->
+    </div>
+
+    <script>
+        const darkModeToggle = document.querySelector('.dark-mode-toggle');
+        const body = document.body;
+        const html = document.querySelector('html');
+
+        darkModeToggle.addEventListener('click', () => {
+            html.classList.toggle('dark-mode');
+            const isDarkMode = html.classList.contains('dark-mode');
+            darkModeToggle.textContent = isDarkMode ? 'ライトモード' : 'ダークモード';
+            localStorage.setItem('darkMode', isDarkMode); // ローカルストレージに状態を保存
+        });
+
+        // ページ読み込み時にダークモードの状態を復元
+        const storedDarkMode = localStorage.getItem('darkMode');
+        if (storedDarkMode === 'true') {
+            html.classList.add('dark-mode');
+            darkModeToggle.textContent = 'ライトモード';
+        }
+    </script>
+</body>
+
+</html>

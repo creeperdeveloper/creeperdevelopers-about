@@ -166,7 +166,7 @@
 <body>
     <button class="dark-mode-toggle">ダークモード</button>
     <div class="container">
-        <h1>FlimsyDeer05833の自己紹介</h1>
+        <h1>creeper_developer / FlimsyDeer05833</h1>
         <p style="margin-top: 20px;">マイクラしかしない人です<br><a href="#developing">NovaDefender AntiCheat</a>というアドオンを開発しています</p>
         <div class="profile-info">
             <h2>基本情報</h2>
@@ -178,11 +178,11 @@
                 <p>
                     Xbox: <span style="font-weight: bold;">FlimsyDeer05833</span>
                 </p>
-                <p>
+                <!-- <p>
                     Youtube: <a href="https://www.youtube.com/@creeper_developers" target="_blank">@creeper_developers
                     </a>
                     ※アップしてない（今のところ）
-                </p>
+                </p> -->
                 <p>
                     Spotify: <a href="https://open.spotify.com/user/31sv3mdlnohcgmgjrgkmn22tdvkq?si=9e5f2e3e40694440"
                         target="_blank">creeper_developer</a>
@@ -195,6 +195,20 @@
             <ul>
                 <li>プログラミング</li>
                 <li>Minecraft</li>
+            </ul>
+        </div>
+
+        <div class="skills">
+            <h2>やっていること</h2>
+            <ul>
+                <li>JavaScript</li>
+                <li>Minecraft</li>
+                <li>Python</li>
+                <li>ウェブサイト作成</li>
+                <li>アドオン開発</li>
+                <li>Minecraftレッドストーン回路の作成</li>
+                <li>Minecraftコマンド作成</li>
+                <li>チート研究と対策</li>
             </ul>
         </div>
 
@@ -232,15 +246,14 @@
         darkModeToggle.addEventListener('click', () => {
             html.classList.toggle('dark-mode');
             const isDarkMode = html.classList.contains('dark-mode');
-            darkModeToggle.textContent = isDarkMode ? 'ライトモード' : 'ダークモード';
-            localStorage.setItem('darkMode', isDarkMode); // ローカルストレージに状態を保存
+            darkModeToggle.textContent = isDarkMode ? 'Light' : 'Dark';
+            localStorage.setItem('darkMode', isDarkMode);
         });
 
-        // ページ読み込み時にダークモードの状態を復元
         const storedDarkMode = localStorage.getItem('darkMode');
         if (storedDarkMode === 'true') {
             html.classList.add('dark-mode');
-            darkModeToggle.textContent = 'ライトモード';
+            darkModeToggle.textContent = 'Light';
         }
     </script>
 </body>
